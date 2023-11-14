@@ -31,12 +31,7 @@ return data
   const discountPrice = details.price - details.price * percentage;
     console.log("details",details)
 
-    const addToCart = () =>{
-     setCount(count+1)
-     console.log(count)
-    //  setCart(details)
-    //  console.log(cart.title)
-    }
+    
   return (
     
     <div>
