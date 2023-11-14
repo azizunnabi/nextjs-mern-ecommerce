@@ -1,4 +1,4 @@
-"use client"
+
 import CustomImage from '@/components/Global/CustomImage'
 import Nav from '@/components/dashboard/Nav'
 import axios from 'axios'
@@ -23,8 +23,7 @@ return data
 }
 
  const page = async (props) => {
-  const [count, setCount] = useState(0)
-  const [cart, setCart]=useState([]);
+  
     console.log(props);
    
     const details= await fetchDetails(props.params.slug);
@@ -96,7 +95,7 @@ return data
          font-semibold flex items-center justify-center h-full  transition-colors duration-250 ease-in-out cursor-default flex-shrink-0 text-base text-heading w-12  md:w-20 xl:w-24'>1</span>
          <button className='cursor-pointer hover:bg-black hover:text-white border rounded  w-9 md:w-11 h-9 md:h-11 p-1 mb-2 md:mb-3 ltr:mr-2 rtl:ml-2 ltr:md:mr-3 rtl:md:ml-3 flex justify-center items-center text-heading text-xs md:text-sm uppercase font-semibold transition duration-200 ease-in-out hover:border-black border-black'><AddIcon /></button>
          
-         <button className='text-[13px] md:text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-body text-center justify-center border-0 border-transparent placeholder-white focus-visible:outline-none focus:outline-none rounded-md  h-11 md:h-12 px-5 bg-heading text-white py-2 transform-none normal-case bg-black hover:text-white hover:bg-gray-600 hover:shadow-cart cursor-not-allowed hover:cursor-not-allowed w-full md:w-6/12 xl:w-full bg-gray-400 hover:bg-gray-400' onClick={addToCart}>Add to Cart</button>
+         <button className='text-[13px] md:text-sm leading-4 inline-flex items-center cursor-pointer transition ease-in-out duration-300 font-semibold font-body text-center justify-center border-0 border-transparent placeholder-white focus-visible:outline-none focus:outline-none rounded-md  h-11 md:h-12 px-5 bg-heading text-white py-2 transform-none normal-case bg-black hover:text-white hover:bg-gray-600 hover:shadow-cart cursor-not-allowed hover:cursor-not-allowed w-full md:w-6/12 xl:w-full bg-gray-400 hover:bg-gray-400' >Add to Cart</button>
 
          </div>
 
